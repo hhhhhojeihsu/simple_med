@@ -1,13 +1,11 @@
 'use strict';
 
 $(document).ready(function() {
-  $("#inhale_sec").slider();
-  $("#inhale_sec").on("slide", function(slideEvt) {
-    $("#inhale_sec_val").text(slideEvt.value.toFixed(1));
-  })
+  $("#inhale_sec").slider().on("change", function(slideEvt) {
+    $("#inhale_sec_val").text(slideEvt.value.newValue.toFixed(1));
+  });
 
-  $("#exhale_sec").slider();
-  $("#exhale_sec").on("slide", function(slideEvt) {
-    $("#exhale_sec_val").text(slideEvt.value.toFixed(1));
-  })
+  $("#exhale_sec").slider().on("slide", function(slideEvt) {
+    $("#exhale_sec_val").text(slideEvt.value.newValue.toFixed(1));
+  });
 });
