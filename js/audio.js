@@ -2,6 +2,8 @@
 
 var flag = false;
 var break_sec = 2.0;
+var inhale_length = 4.0;
+var exhale_length = 3.3;
 
 $(document).ready(function() {
   $("#audio_btn").click(async function () {
@@ -51,6 +53,12 @@ async function start_med() {
   // Set audio to the beginning
   $("#inhale_mp3").prop("currentTime", 0);
   $("#exhale_mp3").prop("currentTime", 0);
+
+  // Calculate playbackRate
+  var inhale_playbackRate = inhale_length / inhale_sec;
+  var exhale_playbackRate = exhale_length / exhale_sec;
+  $("#inhale_mp3").prop("playbackRate", inhale_playbackRate);
+  $("#exhale_mp3").prop("playbackRate", exhale_playbackRate);
 
   // Play audio
   if(flag)
