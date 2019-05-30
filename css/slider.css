@@ -5,3 +5,11 @@
 .slider-val {
   margin-left: 8px
 }
+
+.slider-marker-l {
+  margin-right: 10px
+}
+
+.slider-marker-r {
+  margin-left: 10px
+}
