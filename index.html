@@ -23,7 +23,7 @@
 
     </div>
     <div class="container">
-      <span>Inhale time: <span id="inhale_sec_val">4.0</span> sec</span>
+      <span>Inhale time: <span id="inhale_sec_val" class="slider-val">4.0</span> sec</span>
       <p>
         <b>1</b>
         <input
@@ -40,7 +40,7 @@
       </p>
     </div>
     <div class="container">
-      <span>Exhale time: <span id="exhale_sec_val">4.0</span> sec</span>
+      <span>Exhale time: <span id="exhale_sec_val" class="slider-val">4.0</span> sec</span>
       <p>
         <b>1</b>
         <input
@@ -56,6 +56,22 @@
         <b>8</b>
       </p>
     </div>
+    <div class="container">
+      <span>Break time: <span id="break_sec_val" class="slider-val">2.0</span> sec</span>
+      <p>
+        <b>0.2</b>
+        <input
+          id="break_sec"
+          type="text"
+          data-provide="slider"
+          data-slider-id="break_sec_slider"
+          data-slider-min="0.2"
+          data-slider-max="8"
+          data-slider-step="0.2"
+          data-slider-value="2"
+        />
+        <b>8</b>
+      </p>
     <div class="container">
       <button id="audio_btn" type="button" class="btn btn-primary">Start</button>
     </div>

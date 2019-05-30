@@ -1,7 +1,7 @@
-#inhale_sec_slider .slider-selection, #exhale_sec_slider .slider-selection {
+.slider-selection {
   background: #BABABA;
 }
 
-#inhale_sec_val, #exhale_sec_val {
+.slider-val {
   margin-left: 8px
 }
