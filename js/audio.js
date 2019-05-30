@@ -5,5 +5,6 @@ $(document).ready(function() {
     $(this).text("Restart");
     if(!$(this).hasClass("btn-danger"))
       $(this).addClass("btn-danger");
+    $("#pause_btn").show();
   });
 });
